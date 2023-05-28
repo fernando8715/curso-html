@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!--La etiqueta form define un formulario, dentro del formato van etiquetas input
+    - type es el tipo de entrada
+    - Las etiquetas input y labet son elementos de linea
+    - La funcionalidad required hace que sea obligarorio hacer algo
+    - minlength define cuantos caracteres minimos se debe ingresar, para que funciona debe ponerse la etiquete required -->
+
+<h3>Agrega tus datos</h3>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" minlength="4">
+        <input type="color" name="" id="">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" placeholder="Contraseña">
+        <br>
+        <br>
+        <label for="numero">Numero</label>
+        <input type="number" name="" id="numero">
+        <br>
+        <br>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="" id="fecha">
+        <br>
+        <h3>Paises</h3>
+        <select>
+            <option>Colombia</option>
+            <option selected>Mexico</option>
+            <option>EE.UU</option>
+        </select>
+        <br>
+        <h3>Estado Civil</h3>
+        <label>
+            <input type="radio" name="turno">Casado
+            <input type="radio" name="turno">Soltero
+        </label>
+        <br>
+        <h3>Aceptar terminos y condiciones</h3>
+        <label>
+        <input type="checkbox">Aceptar terminos y condiciones
+        </label>
+        <br>
+        <textarea></textarea>
+        <br>
+        <h3>Agrega comentarios</h3>
+        <input type="submit">  
+        <input type="reset" value="reset">     
+    </form>
+
+
+</body>
+</html>
